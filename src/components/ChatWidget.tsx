@@ -5,7 +5,6 @@ import { ErrorBoundary } from './ErrorBoundary';
 import { ChatIcon, CloseIcon } from './Icons';
 import { saveMessages, loadMessages } from '../utils/storage';
 import { sendMessageToLLM, ChatApiError } from '../utils/api';
-import '../styles/widget.scss';
 
 export const ChatWidget: React.FC<ChatWidgetProps> = ({
   apiKey,

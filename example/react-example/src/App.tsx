@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { ChatWidget } from 'chat-widget-edson';
 import './App.css';
 
 function App() {
   const [apiKey, setApiKey] = useState('');
-  const [primaryColor, setPrimaryColor] = useState('#8b5cf6');
+  const [primaryColor, setPrimaryColor] = useState('#fff');
   const [position, setPosition] = useState<'bottom-right' | 'bottom-left'>('bottom-right');
   const [isOnline, setIsOnline] = useState(true);
   const [maintenanceMode, setMaintenanceMode] = useState(false);

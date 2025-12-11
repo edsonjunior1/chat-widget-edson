@@ -47,7 +47,7 @@ export const ChatWindow: React.FC<ChatWindowProps> = ({
       <MessageList messages={messages} />
       {isLoading && (
         <div className="loading-indicator" role="status" aria-live="polite">
-          <span>Digitando...</span>
+          <span>Typing...</span>
         </div>
       )}
       {error && (

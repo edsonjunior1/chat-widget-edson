@@ -1,0 +1,33 @@
+# Source files
+src/
+example/
+scripts/
+*.config.*
+vite.config.*
+tsconfig*.json
+build.mjs
+
+# Development files
+.git/
+.gitignore
+.env
+.env.*
+*.log
+node_modules/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build artifacts (mas dist/ será incluído)
+*.tsbuildinfo
+
+# Documentation de desenvolvimento
+TESTING.md

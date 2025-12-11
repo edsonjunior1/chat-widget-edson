@@ -15,6 +15,9 @@
     },
     "./widget.js": {
       "default": "./dist/widget.js"
+    },
+    "./styles.css": {
+      "default": "./dist/chat-widget-edson.css"
     }
   },
   "files": [
@@ -25,6 +28,10 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/edsonascendino/chat-widget.git"
+  },
+  "homepage": "https://github.com/edsonascendino/chat-widget#readme",
+  "bugs": {
+    "url": "https://github.com/edsonascendino/chat-widget/issues"
   },
   "keywords": [
     "react",
@@ -38,6 +45,7 @@
   "scripts": {
     "dev": "vite",
     "build": "node build.mjs",
+    "prepublishOnly": "npm run build",
     "preview": "vite preview --outDir dist",
     "test:api": "npm run build && npm run preview",
     "lint": "eslint src --ext .ts,.tsx",

@@ -1,10 +1,10 @@
-# React Example - Chat Widget
+# React Example
 
-This is an example of how to use `chat-widget-edson` as a React component.
+Example application demonstrating how to use `chat-widget-edson` as a React component.
 
-## How to Run
+## Setup
 
-1. First, make sure the main package is built:
+1. Build the main package:
    ```bash
    cd ../..
    npm run build
@@ -15,23 +15,23 @@ This is an example of how to use `chat-widget-edson` as a React component.
    npm install
    ```
 
-3. Run the development server:
+3. Run development server:
    ```bash
    npm run dev
    ```
 
-4. Open your browser at `http://localhost:5173`
+4. Open `http://localhost:5173`
 
-## Usage
+## What's Included
 
-This example demonstrates:
-- How to import and use `ChatWidget` as a React component
-- How to configure all available props
-- How to use callbacks like `onMessageSent`
+This example shows:
+- How to import and use `ChatWidget`
+- Configuring all available props
+- Using the `onMessageSent` callback
 - Real-time configuration interface
 
-## Structure
+## Project Structure
 
-- `src/App.tsx` - Main component with usage example
+- `src/App.tsx` - Main component with example usage
 - `src/main.tsx` - Application entry point
-- `index.html` - Base HTML
+- `index.html` - Base HTML template

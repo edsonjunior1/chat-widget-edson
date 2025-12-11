@@ -13,8 +13,8 @@
   </style>
 </head>
 <body>
-  <h1>Teste do Chat Widget com ChatGPT</h1>
-  <p>Digite uma mensagem no widget para testar a integração com a API do ChatGPT.</p>
+  <h1>Test the Chat Widget with ChatGPT</h1>
+  <p>Type a message in the widget to test the integration with the ChatGPT API.</p>
   
   <div id="root"></div>
   <script type="module">
@@ -24,7 +24,7 @@
     const root = createRoot(document.getElementById('root'));
     root.render(
       React.createElement(ChatWidget, {
-        apiKey: 'api-key', // ⚠️ Substitua pela sua API key do OpenAI
+        apiKey: 'api-key',
         primaryColor: '#8b5cf6',
         position: 'bottom-right',
         isOnline: true,
