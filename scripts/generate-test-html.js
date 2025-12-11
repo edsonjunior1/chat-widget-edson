@@ -5,8 +5,17 @@ import { fileURLToPath } from 'url';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const rootDir = resolve(__dirname, '..');
 
-// Read API key from .env file
+// Read API key from .env file (never use in production/publication)
 function getApiKey() {
+  // ALWAYS use placeholder for publication builds
+  // The key should only be used locally for testing
+  const isPublishing = process.env.NODE_ENV === 'production' || process.env.npm_lifecycle_event === 'prepublishOnly';
+  
+  if (isPublishing) {
+    console.log('INFO: Using placeholder API key for build (publication mode)');
+    return 'YOUR_API_KEY_HERE';
+  }
+
   const envPath = resolve(rootDir, '.env');
   
   if (!existsSync(envPath)) {
@@ -21,7 +30,7 @@ function getApiKey() {
     if (apiKeyMatch && apiKeyMatch[1]) {
       const apiKey = apiKeyMatch[1].trim();
       if (apiKey && apiKey !== 'sk-proj-your-api-key-here') {
-        console.log('SUCCESS: API key found in .env');
+        console.log('SUCCESS: API key found in .env (local development only)');
         return apiKey;
       }
     }

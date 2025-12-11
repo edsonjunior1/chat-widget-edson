@@ -1,6 +1,6 @@
 {
   "name": "chat-widget-edson",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Embeddable AI chat widget for AI technical assessment.",
   "license": "MIT",
   "author": "Edson Ascendino",
@@ -45,7 +45,7 @@
   "scripts": {
     "dev": "vite",
     "build": "node build.mjs",
-    "prepublishOnly": "npm run build",
+    "prepublishOnly": "NODE_ENV=production npm run build",
     "preview": "vite preview --outDir dist",
     "test:api": "npm run build && npm run preview",
     "lint": "eslint src --ext .ts,.tsx",

@@ -15,19 +15,23 @@ build.mjs
 *.log
 node_modules/
 
-# IDE
+# IDE files 
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
 
-# OS
+# OS files
 .DS_Store
 Thumbs.db
 
-# Build artifacts (mas dist/ será incluído)
+# Build artifacts (but dist/ will be included)
 *.tsbuildinfo
 
-# Documentation de desenvolvimento
+# Development documentation
 TESTING.md
+
+# Exclude test HTML files that might contain API keys
+dist/index.html
+dist/*.html
