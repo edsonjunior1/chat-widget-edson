@@ -1,6 +1,7 @@
 {
   "name": "chat-widget-edson",
   "version": "0.1.2",
+  "type": "module",
   "description": "Embeddable AI chat widget for AI technical assessment.",
   "license": "MIT",
   "author": "Edson Ascendino",
